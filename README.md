@@ -23,5 +23,5 @@ uv run python q6_test.py
 We should see this:
 
 ```json
-{'conversion_probability': <value>, 'conversion': False}
+{'conversion_probability': 0.49999999999842815, 'conversion': False}
 ```
