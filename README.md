@@ -27,3 +27,21 @@ We should see this:
 ```
 
 Now we can stop the container running in Docker.
+
+Next let's create a cluster with kind:
+
+```bash
+kind create cluster
+```
+
+And check with kubectl that it was successfully created:
+
+```bash
+kubectl cluster-info
+```
+
+To be able to use the docker image we previously created (zoomcamp-model:3.13.10-hw10), we need to register it with kind.
+
+```bash
+kind load docker-image zoomcamp-model:3.13.10-hw10
+```
