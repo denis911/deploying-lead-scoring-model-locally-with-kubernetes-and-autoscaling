@@ -25,3 +25,5 @@ We should see this:
 ```json
 {'conversion_probability': 0.49999999999842815, 'conversion': False}
 ```
+
+Now we can stop the container running in Docker.
