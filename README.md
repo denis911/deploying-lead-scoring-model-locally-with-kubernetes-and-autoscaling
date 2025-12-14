@@ -97,7 +97,7 @@ NB - we need to forward ports to redirect traffic - so we can run our tests as u
 
 Cleanup
 
-Delete the kubernetes deployment and service:
+Stop port redirection and delete the kubernetes deployment and service:
 
 ```bash
 kubectl delete -f deployment.yaml
