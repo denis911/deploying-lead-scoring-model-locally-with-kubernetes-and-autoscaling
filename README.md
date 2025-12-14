@@ -45,3 +45,23 @@ To be able to use the docker image we previously created (zoomcamp-model:3.13.10
 ```bash
 kind load docker-image zoomcamp-model:3.13.10-hw10
 ```
+
+Then create deployment.yaml file and deploy it:
+
+```bash
+kubectl apply -f deployment.yaml
+```
+
+Check the deployment:
+
+```bash
+kubectl get deployments
+kubectl get pods
+kubectl describe deployment clothing-classifier
+```
+
+View logs:
+
+```bash
+kubectl logs -l app=clothing-classifier --tail=20
+```
