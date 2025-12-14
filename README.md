@@ -84,7 +84,7 @@ Testing the Deployed Service
 We can test our service locally by forwarding the port 9696 on our computer to the port 80 on the service:
 
 ```bash
-kubectl port-forward service/<Service name> 9696:80
+kubectl port-forward service/subscription 9696:80
 ```
 
 Run q6_test.py once again to verify that everything is working. We should get the same result as before - roughly 0.49999999 ...
