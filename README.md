@@ -96,7 +96,15 @@ uv run q6_test.py
 NB - we need to forward ports to redirect traffic - so we can run our tests as uv run q6_test.py ...
 
 Cleanup
-Delete everything on kubernetes at once:
+
+Delete the kubernetes deployment and service:
+
+```bash
+kubectl delete -f deployment.yaml
+kubectl delete -f service.yaml
+```
+
+Or delete everything on kubernetes at once:
 
 ```bash
 kubectl delete all -l app=subscription
