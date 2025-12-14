@@ -66,4 +66,23 @@ View logs:
 kubectl logs -l app=subscription --tail=20
 ```
 
-Redi
+Now let's create a service for this deployment (service.yaml) and deploy it:
+
+```bash
+kubectl apply -f service.yaml
+```
+
+Check the service:
+
+```bash
+kubectl get services
+kubectl describe service subscription
+```
+
+Testing the Deployed Service
+
+```bash
+uv run q6_test.py
+```
+
+Redirect traffic - so we can run our tests as uv run q6_test.py
