@@ -81,8 +81,16 @@ kubectl describe service subscription
 
 Testing the Deployed Service
 
+We can test our service locally by forwarding the port 9696 on our computer to the port 80 on the service:
+
+```bash
+kubectl port-forward service/<Service name> 9696:80
+```
+
+Run q6_test.py once again to verify that everything is working. We should get the same result as before - roughly 0.49999999 ...
+
 ```bash
 uv run q6_test.py
 ```
 
-Redirect traffic - so we can run our tests as uv run q6_test.py
+NB - we need to forward ports to redirect traffic - so we can run our tests as uv run q6_test.py ...
