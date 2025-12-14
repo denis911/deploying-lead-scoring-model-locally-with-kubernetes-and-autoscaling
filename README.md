@@ -57,11 +57,13 @@ Check the deployment:
 ```bash
 kubectl get deployments
 kubectl get pods
-kubectl describe deployment clothing-classifier
+kubectl describe deployment subscription
 ```
 
 View logs:
 
 ```bash
-kubectl logs -l app=clothing-classifier --tail=20
+kubectl logs -l app=subscription --tail=20
 ```
+
+Redi
